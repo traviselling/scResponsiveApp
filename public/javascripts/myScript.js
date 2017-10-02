@@ -4,10 +4,10 @@ $(document).ready(function(){
   },2000, "linear");
 
   $('h1').animate({
-      fontSize : "5em"
+      fontSize : "4em"
   },3000);
   $('h2').animate({
-      fontSize : "3.5em"
+      fontSize : "2.5em"
   },3000);
   $('.info').fadeIn(9000);
   $('.contactHeader').animate({

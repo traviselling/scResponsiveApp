@@ -10,7 +10,7 @@ body ,html{
     height: 100%;
     padding:0px;
     margin: 0 ;
-    background-color:#9d9d9d;
+    background-color:#4d4d4d;
     color:#F1c37E;
 }
 h1{
@@ -37,7 +37,7 @@ h3{
 .info{
   font-size: 1.5em;
   display: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color:#F1c37E;
   letter-spacing: .1em;
   margin-top: 5%;
@@ -80,7 +80,7 @@ h3{
   margin-top:10%;
   margin-right: 20px;
   letter-spacing: .1em;
-  border-top: 1px solid #F1c37E;
+  border-top: 1px solid #F1c37e;
   padding-top: 30px;
 }
 #nav li img{
@@ -88,10 +88,12 @@ h3{
   float: right;
 }
 #nav li a{
-  color:white;
   text-decoration: none;
   float:left;
-
+  font-family: 'Crete Round', serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color:#F1c37e;
 }
 
 #mainWindow {
@@ -102,7 +104,6 @@ h3{
     background-image: url("../images/bgPic@3x.png");
     background-repeat: no-repeat;
     background-position: 50% 30%;
-
 }
 .mainTextBlock {
   display: inline-block;
@@ -177,6 +178,7 @@ letter-spacing: .1em;
   padding-top:10%;
   border-top: 3px solid #F1c37E;
   text-align: justify;
+  font-family: 'Open Sans Condensed',sans-serif;
 
 }
 /* Services */
@@ -190,6 +192,9 @@ letter-spacing: .1em;
 }
 .serviceText{
   line-height: 27px;
+  font-size: 1.2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .2rem;
 }
 /* Contact */
 form{
@@ -276,11 +281,17 @@ textarea{
       background-position: 50% 30%;
   }
   h1{
-    font-size: 4em;
+    font-size: 1rem;
     font-family: 'Alfa Slab One', cursive;
   }
+  h2{
+    font-size: 1rem;
+  }
+  .smarty{
+    font-size: 2em;
+  }
   .subTitle{
-    font-size: 3em;
+    font-size: 2em;
     color: #f1c37e;
   }
   .info{
@@ -301,10 +312,13 @@ textarea{
   text-align:center;
   padding-top: 20%;
   color: white;
-
 }
 #nav ul{
   margin-top: 80%;
+}
+#nav li a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color:white;
 }
 .logo img{
   height: 75px;

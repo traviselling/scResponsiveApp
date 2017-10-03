@@ -6,9 +6,14 @@ $(document).ready(function(){
   $('h1').animate({
       fontSize : "4em"
   },3000);
+  $(".welcome").animate({
+    fontSize:"2em"
+  })
+
   $('h2').animate({
       fontSize : "2.5em"
   },3000);
+  
   $('.info').fadeIn(9000);
   $('.contactHeader').animate({
       fontSize : "2em"

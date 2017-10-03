@@ -12,6 +12,9 @@ body ,html{
     margin: 0 ;
     background-color:#4d4d4d;
     color:#F1c37E;
+    background-image: url("../images/bgHome.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
 }
 h1{
   color:white;
@@ -80,7 +83,8 @@ h3{
   margin-top:10%;
   margin-right: 20px;
   letter-spacing: .1em;
-  border-top: 1px solid #F1c37e;
+  border-top: 1px solid rgba(	241, 195, 126, .1);
+
   padding-top: 30px;
 }
 #nav li img{
@@ -90,10 +94,13 @@ h3{
 #nav li a{
   text-decoration: none;
   float:left;
-  font-family: 'Crete Round', serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.8rem;
   font-weight: 100;
   color:#F1c37e;
+}
+#nav li a:hover{
+  color:white;
 }
 
 #mainWindow {
@@ -101,9 +108,9 @@ h3{
     min-height: 100%;
     text-align: center;
     padding-top: 20%;
-    background-image: url("../images/bgPic@3x.png");
+    /*background-image: url("../images/bgHome.png");
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 30%;*/
 }
 .mainTextBlock {
   display: inline-block;
@@ -158,7 +165,7 @@ text-align: center;
 .infoSectionText, .aboutSectionText {
   line-height: 27px;
   font-size: 21px;
-  font-family: Helvetica;
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-top: 3%;
   text-align: justify;
 }
@@ -271,20 +278,28 @@ textarea{
 }
 
 @media (min-width:320px) and (max-width:767px) {
+  body{
+    background-image: url("../images/bgHome.png");
+    background-repeat: no-repeat;
+    background-position: 70% 20%;
+  }
   #mainWindow {
       height:680px;
       min-height: 100%;
       text-align: center;
       padding-top: 20%;
-      background-image: url("../images/bgPic@2x.png");
+      /*background-image: url("../images/bgPic@2x.png");
       background-repeat: no-repeat;
-      background-position: 50% 30%;
+      background-position: 50% 30%;*/
   }
   h1{
-    font-size: 1rem;
+
     font-family: 'Alfa Slab One', cursive;
   }
   h2{
+
+  }
+  .mobileText{
     font-size: 1rem;
   }
   .smarty{
@@ -302,6 +317,9 @@ textarea{
     text-align:center;
     margin-top: 30%;
     width: 100%;
+  }
+  .welcome{
+    font-size: 2em;
   }
 #nav {
   position:absolute;
@@ -329,14 +347,19 @@ textarea{
 }
 }
 @media (min-width:768px) and (max-width:991px) {
+body{
+  background-image: url("../images/bgHome@0.5x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
   #mainWindow {
       height:680px;
       min-height: 100%;
       text-align: center;
       padding-top: 20%;
-      background-image: url("assets/img/bgPic@3x.png");
+      /*background-image: url("assets/img/bgPic@3x.png");
       background-repeat: no-repeat;
-      background-position: 50% 30%;
+      background-position: 50% 30%;*/
   }
   h1{
     font-size: 4em;

@@ -58,7 +58,8 @@ h3{
 }#nav {
     height: 795px;
     min-height: 100%;
-    background-color:rgba(255,140,0, 0.5);
+    /*background-color:rgba(255,140,0, 0.5);*/
+    background-color:rgba(0,0,0, 0.3);
     text-align:center;
     padding-top: 20px;
 
@@ -259,9 +260,11 @@ textarea{
   color: whitesmoke;
   font-family: "Alpha Slab One" cursive;
   float: left;
+
 }
 .contactMethodWrapper{
   padding:2%;
+
 }
 .contactMethod{
   margin-top: 8%;
@@ -362,6 +365,27 @@ textarea{
 .logo{
   position: fixed;
   z-index: 2;
+}
+.contactMethodWrapper{
+  padding:12%;
+
+}
+.contactMethod{
+  margin-top: 8%;
+  margin-left: 5%;
+}
+.contactMethodText{
+  display: none;
+  color:white;
+}
+.contactMethod img{
+  height:25px;
+  margin-right:2%;
+  display:inline-block;
+  float:right;
+}
+.myBtn{
+  /*clear:both;*/
 }
 }
 @media (min-width:768px) and (max-width:991px) {

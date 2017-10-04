@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('h2').animate({
       fontSize : "2.5em"
   },3000);
-  
+
   $('.info').fadeIn(9000);
   $('.contactHeader').animate({
       fontSize : "2em"

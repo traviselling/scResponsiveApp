@@ -151,6 +151,11 @@ text-align: center;
   width :200px;
   display: inline-block;
   border: 1px solid white;
+  background-image: url("../images/userAuthThumb.jpg");
+  background-position: center;
+
+  padding:0;
+
 }
 .appCaption{
   color:white;
@@ -196,7 +201,6 @@ letter-spacing: .1em;
   display: inline-block;
   border: 1px solid white;
   margin:1%;
-
 }
 .serviceText{
   line-height: 27px;
@@ -282,9 +286,10 @@ textarea{
 
 @media (min-width:320px) and (max-width:767px) {
   body{
-    background-image: url("../images/bgHome.png");
+    background-image: url("../images/bgHomePortrait@0.5x.png");
     background-repeat: no-repeat;
-    background-position: 70% 20%;
+    background-position: fixed;
+    /*background-position: 70% 20%;*/
 
   }
   #mainWindow {
@@ -292,17 +297,12 @@ textarea{
       min-height: 100%;
       text-align: center;
       padding-top: 20%;
-      /*background-image: url("../images/bgPic@2x.png");
-      background-repeat: no-repeat;
-      background-position: 50% 30%;*/
   }
   h1{
 
     font-family: 'Alfa Slab One', cursive;
   }
-  h2{
 
-  }
   .mobileText{
     font-size: 1rem;
   }
@@ -336,22 +336,21 @@ textarea{
 }
 #nav ul{
   padding-left: 20px;
-
 }
 #nav ul li{
   display:inline-block;
   margin:0;
-  background-color:rgba(0,0,0, 0.1);
-  height:50px;
-  width:80px;
-  border-radius: 50%;
+  padding:0;
   text-align: center;
 }
 #nav li a{
   font-family: 'Open Sans Condensed', sans-serif;
   color:#f1ce7e;
-  display:inline;
-  margin-left: 10px;
+  display:inline-block;
+  height:50px;
+  width:80px;
+  border-radius: 50%;
+  background-color:rgba(0,0,0, 0.1);
   margin-top: -20px;
 }
 
@@ -384,16 +383,14 @@ textarea{
   display:inline-block;
   float:right;
 }
-.myBtn{
-  /*clear:both;*/
-}
+
 }
 @media (min-width:768px) and (max-width:991px) {
 body{
   background-image: url("../images/bgHome@0.5x.png");
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-}
+  /*background-position: 50% 30%;
+}*/
   #mainWindow {
       height:680px;
       min-height: 100%;
@@ -410,6 +407,9 @@ body{
     font-size: 3em;
     color: #f1c37e;
   }
+  .smarty{
+    font-size: 3em;
+  }
   .info{
     font-size: 1.5em;
   }
@@ -424,10 +424,10 @@ body{
   z-index: 1;
   height: 680px;
   min-height: 100%;
-  background-color:rgba(255,140,0, 0.5);
+  background-color:rgba(0,0,0, 0.3);
   text-align:center;
   padding-top: 20%;
-  color: white;
+
 
 }
 #nav ul{

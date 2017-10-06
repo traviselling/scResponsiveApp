@@ -146,16 +146,32 @@ text-align: center;
 #contactWindow{
   overflow: hidden;
 }
-.appDisplay{
+.appDisplay1{
   height: 150px;
   width :200px;
   display: inline-block;
-  border: 1px solid white;
+  border: 2px solid #f1c37e;
   background-image: url("../images/userAuthThumb.jpg");
   background-position: center;
-
   padding:0;
-
+}
+.appDisplay2{
+  height: 150px;
+  width :200px;
+  display: inline-block;
+  border: 2px solid #f1c37e;
+  background-image: url("../images/eCommerceThumb.jpg");
+  background-position: center;
+  padding:0;
+}
+.appDisplay3{
+  height: 150px;
+  width :200px;
+  display: inline-block;
+  border: 2px solid #f1c37e;
+  background-image: url("../images/blogThumb.jpg");
+  background-position: top;
+  padding:0;
 }
 .appCaption{
   color:white;

@@ -4,11 +4,11 @@ $(document).ready(function(){
   },2000, "linear");
 
   $('h1').animate({
-      fontSize : "4em"
+      fontSize : "2em"
   },3000);
   $(".welcome").animate({
     fontSize:"2em"
-  })
+  });
 
   $('h2').animate({
       fontSize : "2.5em"

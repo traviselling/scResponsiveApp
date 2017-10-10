@@ -63,6 +63,7 @@ h3{
     text-align:center;
     padding-top: 20px;
 
+
 }
 .logo{
   position: absolute;
@@ -80,7 +81,6 @@ h3{
 }
 #nav li{
   list-style:none;
-  font-size: 1em;
   margin-top:10%;
   margin-right: 20px;
   letter-spacing: .1em;
@@ -99,6 +99,7 @@ h3{
   font-size: 1.8rem;
   font-weight: 100;
   color:#F1c37e;
+  
 }
 #nav li a:hover{
   color:white;
@@ -318,6 +319,9 @@ textarea{
 
     font-family: 'Alfa Slab One', cursive;
   }
+  h2{
+    font-size: 2.5em;
+  }
 
   .mobileText{
     font-size: 1rem;
@@ -339,7 +343,7 @@ textarea{
     width: 100%;
   }
   .welcome{
-    font-size: 2em;
+    font-size: 0;
   }
 #nav {
   position:fixed;
@@ -354,7 +358,7 @@ textarea{
   padding-left: 20px;
 }
 #nav ul li{
-  display:inline-block;
+  display:inline;
   margin:0;
   padding:0;
   text-align: center;

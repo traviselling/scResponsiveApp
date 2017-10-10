@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  .logo
+    img(src='/images/LogoGlasses150.png', alt='')
+  // end logo
+  #nav.col-md-3
+    ul
+      li
+        a(href='/') HOME
+        |                       
+        img(src='/images/home.png', alt='')
+      |                   
+      li
+        a(href='/apps') APPS
+        |                       
+        img(src='/images/apps.png', alt='')
+      |                   
+      li
+        a(href='/services') SERVICES
+        |                       
+        img(src='/images/services.png', alt='')
+      |                   
+      li
+        a(href='/about') ABOUT
+        |                       
+        img(src='/images/about.png', alt='')
+      li
+        a(href='/users/register') REGISTER
+        
+  // end nav
+  #mainWindow.col-md-9
+    #contactWindow
+      h2 Log In
+      |                         
+      .formWrapper.row
+        .col-md-12
+          form(action='', method='POST', role='form')
+            .form-group
+              label(for='') Username
+              |                                         
+              input.form-control(type='text', id='', placeholder='' name="userName")
+              |                                         
+              label(for='') Password
+              |                                         
+              input.form-control(type='password', id='', placeholder='' name="password")
+            |                                     
+            button.btn.btn-lg.myBtn(type='submit') LOG IN
+        // end div col-md-6

@@ -37,6 +37,10 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+//Validator
+app.use(expressValidator());
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -53,22 +57,7 @@ app.use(session(
 app.use(passport.initialize());
 app.use(passport.session());
 
-//Validator
-app.use(expressValidator({
-  errorFormatter: function(param,msg,value){
-      var namespace =param.split('.')
-      ,root = namespace.shift()
-      ,formParam = root;
-      while(namespace.length){
-        formParam += '[' + namespace.shift() + ']';
-      }
-      return{
-        param : formparam,
-        msg : msg,
-        value : value
-      };
-    }
-}));
+
 
 // Messages
 app.use(require('connect-flash')());

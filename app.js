@@ -10,7 +10,7 @@ var LocalStrategy = require('passport-local');
 var multer = require('multer');
 var upload = multer({dest: './uploads'})
 var flash = require('connect-flash');
-var expressValidator = require("express-validator");
+// var expressValidator = require("express-validator");
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db  = mongoose.connection;
@@ -39,7 +39,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //Validator
-app.use(expressValidator());
+// app.use(expressValidator());
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
